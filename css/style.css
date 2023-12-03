@@ -1,0 +1,192 @@
+body{
+    background-color: #F7F7F7;
+margin: 0%;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+  /* START HOME SECTION */
+
+  .words{
+    font-size: 80px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+}
+@keyframes typing {
+    0%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "w"; }
+    2.2791%, 25.0698% { content: "we"; }
+    3.4186%, 23.9302% { content: "web"; }
+    4.5581%, 22.7907% { content: "webs"; }
+    5.6977%, 21.6512% { content: "websi"; }
+    6.8372%, 20.5116% { content: "websit"; }
+    7.9767%, 19.3721% { content: "website"; }
+    9.1163%, 18.2326% { content: "websites"; }
+  
+    30.7674%, 53.2791% { content: ""; }
+    31.9070%, 52.1395% { content: "s"; }
+    33.0465%, 51.0000% { content: "so"; }
+    34.1860%, 50.8605% { content: "sof"; }
+    35.3256%, 49.7209% { content: "soft"; }
+    36.4651%, 48.5814% { content: "softw"; }
+    37.6047%, 47.4419% { content: "softwa"; }
+    38.6047%, 46.4419% { content: "softwar"; }
+    39.6047%, 45.4419% { content: "software"; }
+    40.6047%, 43.4419% { content: "softwares"; }
+  
+    57.2791%, 82.554% { content: ""; }
+    58.8372%, 81.0698% { content: "a"; }
+    59.9767%, 80.9302% { content: "ap"; }
+    60.1163%, 79.7907% { content: "app"; }
+    61.2558%, 78.6512% { content: "apps"; }
+    
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "websites"; }
+      25% { content: "softwares"; }
+      50% { content: "apps"; }
+    
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+  /* END HOME SECTION */
+  /* START ABOUT SECTION */
+
+.about h2{
+
+    font-size: 4rem;
+    color: #DEDEDE;
+}
+
+.overlay{
+    height: 0;
+    transition: 1s ease;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    background-color: rgba(0, 195, 218, 0.9);
+    overflow: hidden;
+    width: 100%;
+}
+
+.div1:hover .overlay{
+    height: 100%;
+}
+
+.text{
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
+  }
+
+  .text .icons{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+     top: -15rem;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    height: 80%;
+  
+    
+  }
+  
+  /* END ABOUT SECTION */
+/* START services SECTION */
+/* END services SECTION */
+/* START PRICES SECTION */
+
+.card-title{
+    font-size: 4rem;
+}
+
+.girl{
+    width: 6rem;
+    height: 6rem;
+}
+
+
+.carousel-control-prev{
+    margin-left: -14rem;
+
+}
+.carousel-control-next{
+    margin-right: -14rem;
+
+
+}
+#prices .carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+#prices .carousel-indicators .active{
+  background-color: #0DCAF0;
+}
+/* END PRICES SECTION */
+/* START CONTACT SECTION */
+/* END CONTACT SECTION */
+/* START NAV SECTION */
+.logo::after{
+  content: ".";
+  color:aqua;
+}
+
+#navbarSupportedContent{
+  border-right: 2px solid gray;
+}
+
+/* END NAV SECTION */
+
+
+
+
+
+
